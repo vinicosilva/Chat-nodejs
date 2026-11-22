@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat em tempo real</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="tela-entrar" class="entrar">
+      <h1>Chat em tempo real</h1>
+      <p>Escolha um nome para entrar no chat.</p>
+      <form id="form-entrar" autocomplete="off">
+        <label for="nome">Seu nome</label>
+        <input id="nome" type="text" maxlength="20" required autofocus>
+        <p id="erro-nome" class="erro" role="alert"></p>
+        <button type="submit">Entrar no chat</button>
+      </form>
+    </section>
+
+    <section id="tela-chat" class="chat" hidden>
+      <header>
+        <h1>Chat</h1>
+        <div class="info">
+          <span id="online" class="online" title="">0 online</span>
+          <span id="status" class="status">Conectando</span>
+        </div>
+      </header>
+      <ol id="mensagens" class="mensagens" aria-live="polite"></ol>
+      <form id="form-mensagem" class="enviar" autocomplete="off">
+        <label for="mensagem" class="sr-only">Mensagem</label>
+        <input id="mensagem" type="text" maxlength="500" placeholder="Escreva uma mensagem">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <script src="/js/chat.js"></script>
+</body>
+</html>

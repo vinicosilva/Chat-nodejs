@@ -1,0 +1,21 @@
+{
+  "name": "chat-nodejs",
+  "version": "1.0.0",
+  "description": "Chat em tempo real com Node.js, WebSockets e persistência de mensagens em arquivo JSON",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["node", "websocket", "chat", "tempo-real"],
+  "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "mime-types": "^2.1.35",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
